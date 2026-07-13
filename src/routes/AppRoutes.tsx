@@ -1,18 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-
-const Home = () => <div>Home</div>;
-
+import Home from "../pages/home";
+import About from "../pages/about";
+import Contact from "@/pages/contact";
+import Services from "@/pages/services";
+import Career from "@/pages/career";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/ " element={<Home />} />
       <Route path="/Home" element={<Home />} />
-      <Route path="/about" element={<div>About</div>} />
-      <Route path="/services" element={<div>Services</div>} />
-      <Route path="/portfolio" element={<div>Portfolio</div>} />
-      <Route path="/industries" element={<div>Industries</div>} />
-      <Route path="/career" element={<div>Career</div>} />
-      <Route path="/contact" element={<div>Contact</div>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Services />} />
+      <Route path="/career" element={<Career />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 };
